@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  @apply bg-gray-100 text-gray-800 font-sans;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Custom classes for our application */
+@layer components {
+  /* You can define custom component classes here if needed */
+  .yt-button {
+    @apply bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors;
+  }
+}
